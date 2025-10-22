@@ -1,7 +1,30 @@
-body{
+body {
     background-color: rgb(173, 173, 185);
 }
-.fotos{
-    width: 200px ;
-    height: auto;
+
+.videos {
+    padding-bottom: 35px;
+    padding-top: 35px;
+}
+
+.fotos {
+
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+
+}
+
+.fotos img {
+    opacity: 0.5;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.fotos img:hover {
+    opacity: 1.0;
+    /*border: 2px solid green;*/
+    transform: scale(2.2);
 }
