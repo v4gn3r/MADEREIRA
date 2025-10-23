@@ -1,30 +1,46 @@
 body {
-    background-color: rgb(173, 173, 185);
+    background-color: rgb(219, 179, 230);
 }
 
+header{
+    background-color:rgb(202, 166, 199);
+    border: 2px;
+}
 .videos {
     padding-bottom: 35px;
     padding-top: 35px;
+    gap: 10px;
+    opacity: 0.5;
 }
 
+.videos:hover{
+    opacity: 1.0;
+}
 .fotos {
-
     display: flex;
     overflow-x: auto;
     gap: 10px;
-
 }
 
 .fotos img {
     opacity: 0.5;
     transition: transform 0.3s ease;
-    padding: 20px;
-    width: 200px;
+    padding: 2px;
+    width: 300px;
     height: 200px;
 }
 
 .fotos img:hover {
     opacity: 1.0;
-    /*border: 2px solid green;*/
-    transform: scale(2.2);
+    transform: scale(1.05);
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+    
+.logo img:hover {
+    transform: scale(1.5);
 }
